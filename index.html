@@ -1,0 +1,399 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>RITUAL PB · kozmetické štúdio a face yoga v Považskej Bystrici — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre RITUAL PB, Považská Bystrica — face yoga, maderoterapia, ošetrenia pleti, obočie a riasy. Cenník podľa Notino.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Tenor+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noc:#0e1117; --noc2:#151922; --noc3:#1d222d;
+  --striebro:#c9ced7; --svit:#eef0f3; --tlm:#8d95a3;
+  --prach:#e4e6ea; --atrament:#151922; --sivy:#5d6573;
+  --piesok:#cdb593;
+  --lin:rgba(201,206,215,.16); --linD:rgba(21,25,34,.14);
+  --t:"Tenor Sans","Gill Sans",sans-serif; --s:"Newsreader",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--noc);color:var(--striebro);font:400 19px/1.6 var(--s);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:1px solid var(--piesok);outline-offset:4px}
+.w{width:min(1160px,100% - 48px);margin-inline:auto}
+.k{font:400 12px/1.3 var(--t);letter-spacing:.28em;text-transform:uppercase}
+.n{font-family:var(--t);font-variant-numeric:tabular-nums lining-nums}
+
+.pruh{background:#07090d;color:#b4bac5;font:400 13px/1.45 var(--t);letter-spacing:.03em;text-align:center;padding:9px 16px;border-bottom:1px solid var(--lin)}
+.pruh b{font-weight:400;color:var(--svit)}
+
+.hl{position:relative;z-index:3}
+.hl .w{display:flex;align-items:center;gap:34px;min-height:78px;border-bottom:1px solid var(--lin)}
+.logo{font:400 26px/1 var(--t);letter-spacing:.34em;text-decoration:none;color:var(--svit)}
+.logo span{font-size:12px;letter-spacing:.3em;color:var(--tlm);margin-left:2px}
+.nav{display:flex;gap:30px;margin-left:auto}
+.nav a{font:400 13px/1 var(--t);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;padding:16px 0;background:linear-gradient(var(--piesok),var(--piesok)) 0 calc(100% - 10px)/0 1px no-repeat;transition:background-size .2s}
+.nav a:hover{background-size:100% 1px}
+.cta{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;font:400 13px/1 var(--t);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;transition:background-color .2s,color .2s,border-color .2s}
+.cta-s{background:var(--svit);color:var(--noc)}.cta-s:hover{background:var(--piesok)}
+.cta-o{border:1px solid rgba(201,206,215,.5);color:var(--svit)}.cta-o:hover{border-color:var(--svit);background:rgba(238,240,243,.06)}
+
+/* hero — mesiac */
+.hero{position:relative;overflow:hidden;background:radial-gradient(60% 70% at 72% 40%,#1c2230 0,var(--noc) 70%)}
+.hero-g{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;min-height:min(600px,80vh);padding:40px 0 30px}
+.hero .k{color:var(--piesok)}
+.hero h1{font:400 clamp(54px,7.4vw,104px)/.92 var(--t);letter-spacing:.14em;color:var(--svit);margin:22px 0 26px}
+.hero h1 span{display:block;font-size:.32em;letter-spacing:.5em;color:var(--tlm);margin-top:16px}
+.motto{font:italic 400 clamp(22px,2.3vw,28px)/1.35 var(--s);color:var(--svit);max-width:24ch}
+.motto2{margin-top:14px;color:var(--tlm);font-size:17px;max-width:40ch}
+.motto2 em{color:var(--striebro)}
+.hero .akc{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.luna{position:relative;justify-self:center;width:min(440px,100%);aspect-ratio:1}
+.luna .disk{position:absolute;inset:0;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px rgba(238,240,243,.18),0 0 90px 10px rgba(201,206,215,.13)}
+.luna img{width:100%;height:100%;object-fit:cover;filter:saturate(.72) contrast(1.02);transition:transform .5s}
+.luna:hover img{transform:scale(1.045)}
+/* terminátor: tieň dorastajúceho mesiaca */
+.luna .disk::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 138% 50%,transparent 0 62%,rgba(14,17,23,.55) 74%,rgba(14,17,23,.92) 92%)}
+.luna figcaption{position:absolute;right:-34px;bottom:4%;font:400 11px/1.4 var(--t);letter-spacing:.22em;text-transform:uppercase;color:var(--tlm);writing-mode:vertical-rl;transform:rotate(180deg)}
+
+/* fázy — navigácia kategórií */
+.fazy{border-top:1px solid var(--lin);border-bottom:1px solid var(--lin);margin-top:10px}
+.fazy ol{list-style:none;display:grid;grid-template-columns:repeat(6,1fr)}
+.fazy a{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;text-decoration:none;padding:22px 6px 20px;min-height:44px}
+.fazy li+li a{border-left:1px solid var(--lin)}
+.fazy svg{width:44px;height:44px;transition:transform .5s}
+.fazy a:hover svg{transform:scale(1.045)}
+.fazy small{font:400 11px/1 var(--t);letter-spacing:.24em;text-transform:uppercase;color:var(--tlm)}
+.fazy b{font:400 14px/1.25 var(--t);letter-spacing:.08em;color:var(--svit);background:linear-gradient(var(--piesok),var(--piesok)) 0 100%/0 1px no-repeat;transition:background-size .2s;padding-bottom:3px}
+.fazy a:hover b{background-size:100% 1px}
+
+/* cenník — svetlý lunárny prach */
+.cen{background:var(--prach);color:var(--atrament);padding:96px 0 90px}
+.cen-h{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.cen h2,.sek h2{font:400 clamp(34px,4vw,54px)/1.05 var(--t);letter-spacing:.04em}
+.cen .k{color:var(--sivy)}
+.cen-h p{color:var(--sivy);font-size:17px;max-width:46ch;justify-self:end}
+.skup{display:grid;grid-template-columns:1fr 1fr;gap:64px 72px}
+.sk{scroll-margin-top:24px}
+.sk header{display:flex;align-items:center;gap:18px;padding-bottom:16px;border-bottom:1px solid var(--atrament)}
+.sk header svg{width:40px;height:40px;flex:none}
+.sk h3{font:400 24px/1.15 var(--t);letter-spacing:.06em}
+.sk header small{display:block;font:400 11px/1.3 var(--t);letter-spacing:.24em;text-transform:uppercase;color:var(--sivy);margin-bottom:5px}
+.sk ul{list-style:none}
+.sk li{display:grid;grid-template-columns:1fr auto auto;gap:6px 22px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--linD)}
+.sk li span{font-size:18px;line-height:1.35}
+.sk li i{font:400 13px/1 var(--t);font-style:normal;letter-spacing:.06em;color:var(--sivy);white-space:nowrap}
+.sk li b{font:400 18px/1 var(--t);font-weight:400;min-width:3.2em;text-align:right;white-space:nowrap}
+.sk.spln{grid-column:1 / -1;display:grid;grid-template-columns:300px 1fr;gap:56px;align-items:start}
+.sk.spln figure{border-radius:50%;overflow:hidden;aspect-ratio:1;box-shadow:0 0 0 1px var(--linD),0 0 0 12px var(--prach),0 0 0 13px var(--linD)}
+.sk.spln figure img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.sk.spln figure:hover img{transform:scale(1.045)}
+.sk.spln ul{columns:2;column-gap:56px}
+.sk.spln li{break-inside:avoid}
+.pozn{margin-top:46px;font:400 13px/1.6 var(--t);letter-spacing:.04em;color:var(--sivy)}
+.cen .akc{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.cen .cta-s{background:var(--atrament);color:var(--svit)}.cen .cta-s:hover{background:#2c3342}
+.cen .cta-o{border-color:rgba(21,25,34,.4);color:var(--atrament)}.cen .cta-o:hover{background:rgba(21,25,34,.05);border-color:var(--atrament)}
+
+/* práce */
+.sek{padding:100px 0}
+.sek .k{color:var(--piesok)}
+.prace{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:center}
+.prace p{color:var(--tlm);max-width:40ch;margin-top:20px}
+.kruhy{display:flex;align-items:center;justify-content:flex-end;gap:28px}
+.kruhy figure{text-align:center}
+.kruhy .o{border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px rgba(238,240,243,.2),0 0 50px rgba(201,206,215,.08)}
+.kruhy img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .5s}
+.kruhy figure:hover img{transform:scale(1.045)}
+.kruhy figcaption{margin-top:16px;font:400 11px/1.4 var(--t);letter-spacing:.22em;text-transform:uppercase;color:var(--tlm)}
+.kruhy .m{width:210px}.kruhy .v{width:300px}
+
+/* štúdio */
+.stu{background:var(--noc2);border-block:1px solid var(--lin)}
+.stu .w{display:grid;grid-template-columns:380px 1fr;gap:72px;align-items:center}
+.stu figure{border-radius:50%;overflow:hidden;aspect-ratio:1;box-shadow:0 0 0 1px rgba(238,240,243,.16)}
+.stu figure img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.stu figure:hover img{transform:scale(1.045)}
+.stu blockquote{font:italic 400 clamp(24px,2.6vw,32px)/1.35 var(--s);color:var(--svit);margin:18px 0 22px;max-width:28ch}
+.stu blockquote+p{color:var(--tlm);max-width:52ch}
+.stu blockquote+p q{color:var(--striebro)}
+.fakt{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:30px;border-top:1px solid var(--lin)}
+.fakt li{padding:15px 0;border-bottom:1px solid var(--lin);font-size:17px}
+.fakt li small{display:block;font:400 11px/1.3 var(--t);letter-spacing:.24em;text-transform:uppercase;color:var(--tlm);margin-bottom:4px}
+
+/* hodnotenie */
+.hod{padding:84px 0;text-align:left}
+.hod .w{display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:end}
+.hod dl{display:grid;grid-template-columns:repeat(3,1fr);border-left:1px solid var(--lin)}
+.hod dl div{padding:6px 28px;border-right:1px solid var(--lin)}
+.hod dt{font:400 clamp(44px,5vw,64px)/1 var(--t);color:var(--svit)}
+.hod dt sup{font-size:.36em;color:var(--piesok);vertical-align:top;margin-left:6px}
+.hod dd{font:400 12px/1.5 var(--t);letter-spacing:.14em;text-transform:uppercase;color:var(--tlm);margin-top:12px}
+.hod h2{font:400 clamp(28px,3vw,40px)/1.1 var(--t);letter-spacing:.04em;color:var(--svit);margin-top:14px}
+
+/* kontakt */
+.kon{border-top:1px solid var(--lin);padding:90px 0 80px}
+.kon .w{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.kon .k{color:var(--piesok)}
+.kon h2{font:400 clamp(34px,4vw,54px)/1.05 var(--t);letter-spacing:.04em;color:var(--svit);margin:14px 0 24px}
+.adr{font-size:24px;line-height:1.4;color:var(--svit)}
+.adr small{display:block;font:400 13px/1.5 var(--t);letter-spacing:.04em;color:var(--tlm);margin-top:8px}
+.kon .akc{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.kon dl{display:grid;grid-template-columns:auto 1fr;border-top:1px solid var(--lin)}
+.kon dt,.kon dd{padding:15px 0;border-bottom:1px solid var(--lin)}
+.kon dt{font:400 11px/2 var(--t);letter-spacing:.24em;text-transform:uppercase;color:var(--tlm);padding-right:30px}
+.kon dd{color:var(--svit);font-size:18px}
+.kon dd a{text-decoration:none;background:linear-gradient(var(--piesok),var(--piesok)) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.kon dd a:hover{background-size:100% 1px}
+.kon dd small{display:block;color:var(--tlm);font-size:15px}
+
+footer{border-top:1px solid var(--lin);background:#07090d;color:var(--tlm);font:400 12px/1.6 var(--t);letter-spacing:.12em;padding:28px 0 32px}
+footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+.lista{display:none}
+@media (max-width:960px){
+  .nav{display:none}
+  .hl .cta{margin-left:auto}
+  .hero-g{grid-template-columns:1fr;gap:34px;padding:36px 0 34px;min-height:0}
+  .luna{width:min(340px,82vw);order:-1}
+  .fazy ol{grid-template-columns:repeat(3,1fr)}
+  .fazy li:nth-child(4) a{border-left:0}
+  .fazy li:nth-child(n+4) a{border-top:1px solid var(--lin)}
+  .cen-h,.skup,.prace,.stu .w,.hod .w,.kon .w{grid-template-columns:1fr;gap:40px}
+  .cen-h p{justify-self:start}
+  .sk.spln{grid-template-columns:1fr;gap:30px}
+  .sk.spln figure{width:220px}
+  .kruhy{justify-content:flex-start}
+  .stu figure{width:min(300px,80%)}
+}
+@media (max-width:600px){
+  body{font-size:18px}
+  .w{width:calc(100% - 32px)}
+  .hl .w{min-height:64px;gap:12px}
+  .logo{font-size:21px;letter-spacing:.28em}
+  .hl .cta{padding:0 16px;min-height:44px;font-size:12px;letter-spacing:.16em}
+  .hero h1{font-size:54px;letter-spacing:.1em}
+  .hero .akc .cta{flex:1 1 100%}
+  .fazy a{padding:18px 4px 16px;gap:10px}
+  .fazy b{font-size:13px;letter-spacing:.04em}
+  .fazy small{letter-spacing:.16em}
+  .cen{padding:72px 0 70px}
+  .sk li{grid-template-columns:1fr auto;gap:2px 14px}
+  .sk li i{grid-column:1;grid-row:2}
+  .sk li b{grid-row:1 / span 2;grid-column:2;align-self:center}
+  .sk.spln ul{columns:1}
+  .sek{padding:76px 0}
+  .kruhy{gap:14px;flex-wrap:wrap}
+  .kruhy .v{width:100%;max-width:300px}
+  .kruhy .m{width:calc(50% - 7px)}
+  .fakt{grid-template-columns:1fr}
+  .hod dl{grid-template-columns:1fr;border-left:0;border-top:1px solid var(--lin)}
+  .hod dl div{border-right:0;border-bottom:1px solid var(--lin);padding:20px 0;display:flex;align-items:baseline;gap:18px}
+  .hod dd{margin-top:0}
+  .kon dl{grid-template-columns:1fr}
+  .kon dt{border-bottom:0;padding-bottom:0}
+  footer{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+  .lista{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(14,17,23,.96);border-top:1px solid var(--lin);padding:8px 12px calc(8px + env(safe-area-inset-bottom))}
+  .lista a{min-height:50px;display:flex;align-items:center;justify-content:center;border-radius:999px;font:400 13px/1 var(--t);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:var(--svit);border:1px solid rgba(201,206,215,.5)}
+  .lista a:first-child{background:var(--svit);color:var(--noc);border-color:var(--svit)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="pruh"><b>Neoficiálny návrh</b> — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header class="hl">
+  <div class="w">
+    <a class="logo" href="#">RITUAL<span>PB</span></a>
+    <nav class="nav" aria-label="Hlavná navigácia"><a href="#cennik">Cenník</a><a href="#prace">Práce</a><a href="#studio">Štúdio</a><a href="#kontakt">Kontakt</a></nav>
+    <a class="cta cta-o" href="https://www.notino.sk/salony/ritual-pb/" rel="noopener" target="_blank">Rezervovať</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="w hero-g">
+    <div>
+      <p class="k">Kozmetické štúdio · face yoga · rituály</p>
+      <h1>RITUAL<span>Považská Bystrica</span></h1>
+      <p class="motto">„RITUAL pre telo aj dušu“</p>
+      <p class="motto2">Face yoga, maderoterapia, ošetrenia pleti, obočie a riasy, masáže — podľa ich profilu <em>„1. FACE YOGA v meste“</em>.</p>
+      <div class="akc">
+        <a class="cta cta-s" href="https://www.notino.sk/salony/ritual-pb/" rel="noopener" target="_blank">Rezervovať termín</a>
+        <a class="cta cta-o" href="tel:+421944772700">Zavolať</a>
+      </div>
+    </div>
+    <figure class="luna">
+      <div class="disk"><img src="assets/maderoterapia-dreveny-nastroj.webp" width="720" height="720" alt="Drevený nástroj na maderoterapiu s vygravírovaným nápisom RITUAL" fetchpriority="high"></div>
+      <figcaption>Maderoterapia · foto z ich FB</figcaption>
+    </figure>
+  </div>
+  <nav class="fazy w" aria-label="Kategórie cenníka">
+    <ol>
+      <li><a href="#face-yoga"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#1d222d" stroke="rgba(230,233,238,.55)" stroke-width="1"/></svg><small>Nov</small><b>Face yoga</b></a></li>
+      <li><a href="#maderoterapia"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#1d222d" stroke="rgba(230,233,238,.55)" stroke-width="1"/><path d="M22 2A20 20 0 0 1 22 42A11.20 20 0 0 0 22 2Z" fill="#e6e9ee"/></svg><small>Kosák</small><b>Maderoterapia</b></a></li>
+      <li><a href="#pletove-osetrenia"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#1d222d" stroke="rgba(230,233,238,.55)" stroke-width="1"/><path d="M22 2A20 20 0 0 1 22 42A0.00 20 0 0 1 22 2Z" fill="#e6e9ee"/></svg><small>Prvá štvrť</small><b>Ošetrenia pleti</b></a></li>
+      <li><a href="#cistenie"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#1d222d" stroke="rgba(230,233,238,.55)" stroke-width="1"/><path d="M22 2A20 20 0 0 1 22 42A8.00 20 0 0 1 22 2Z" fill="#e6e9ee"/></svg><small>Dorastá</small><b>Čistenie pleti</b></a></li>
+      <li><a href="#depilacia"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#1d222d" stroke="rgba(230,233,238,.55)" stroke-width="1"/><path d="M22 2A20 20 0 0 1 22 42A14.80 20 0 0 1 22 2Z" fill="#e6e9ee"/></svg><small>Pred splnom</small><b>Depilácia</b></a></li>
+      <li><a href="#obocie-riasy"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#1d222d" stroke="rgba(230,233,238,.55)" stroke-width="1"/><circle cx="22" cy="22" r="20" fill="#e6e9ee"/></svg><small>Spln</small><b>Obočie a riasy</b></a></li>
+    </ol>
+  </nav>
+</section>
+
+<section class="cen" id="cennik" aria-labelledby="cen-h">
+  <div class="w">
+    <div class="cen-h">
+      <div><p class="k">Lunárny cenník</p><h2 id="cen-h">Od novu po spln</h2></div>
+      <p>Všetkých 35 procedúr s trvaním a cenou. Pracujú s kozmetikou Janssen Cosmetics; termín si vyberiete online na Notino alebo Reservio.</p>
+    </div>
+    <div class="skup">
+      <article class="sk" id="face-yoga">
+        <header><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#151922" stroke="#151922" stroke-width="1"/></svg><div><small>Nov</small><h3>Face yoga a masáž tváre</h3></div></header>
+        <ul>
+          <li><span>Face yoga</span><i>1 h</i><b class="n">40 €</b></li>
+          <li><span>Face yoga Premium</span><i>1 h 30 min</i><b class="n">50 €</b></li>
+          <li><span>Kozmetická masáž — tvár a dekolt</span><i>35 min</i><b class="n">20 €</b></li>
+        </ul>
+      </article>
+      <article class="sk" id="maderoterapia">
+        <header><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#151922" stroke="#151922" stroke-width="1"/><path d="M22 2A20 20 0 0 1 22 42A11.20 20 0 0 0 22 2Z" fill="#e4e6ea"/></svg><div><small>Kosák</small><h3>Maderoterapia a relax</h3></div></header>
+        <ul>
+          <li><span>Maderoterapia tváre</span><i>40 min</i><b class="n">25 €</b></li>
+          <li><span>Aróma masáž</span><i>35 min</i><b class="n">25 €</b></li>
+        </ul>
+      </article>
+      <article class="sk" id="pletove-osetrenia">
+        <header><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#151922" stroke="#151922" stroke-width="1"/><path d="M22 2A20 20 0 0 1 22 42A0.00 20 0 0 1 22 2Z" fill="#e4e6ea"/></svg><div><small>Prvá štvrť</small><h3>Kozmetické ošetrenia</h3></div></header>
+        <ul>
+          <li><span>RITUAL Classic</span><i>1 h</i><b class="n">39 €</b></li>
+          <li><span>RITUAL Standard</span><i>1 h 30 min</i><b class="n">49 €</b></li>
+          <li><span>RITUAL Premium</span><i>2 h</i><b class="n">75 €</b></li>
+          <li><span>RITUAL Anti-aging</span><i>1 h 15 min</i><b class="n">49 €</b></li>
+          <li><span>RITUAL Akné</span><i>50 min</i><b class="n">36 €</b></li>
+          <li><span>Kozmetické ošetrenie glass skin</span><i>1 h</i><b class="n">40 €</b></li>
+          <li><span>Ošetrenie alginátovou maskou</span><i>35 min</i><b class="n">19 €</b></li>
+          <li><span>Ozónoterapia</span><i>35 min</i><b class="n">15 €</b></li>
+          <li><span>Parafínový zábal — ruky</span><i>20 min</i><b class="n">10 €</b></li>
+          <li><span>Konzultácia</span><i>15 min</i><b class="n">5 €</b></li>
+        </ul>
+      </article>
+      <div>
+        <article class="sk" id="cistenie">
+          <header><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#151922" stroke="#151922" stroke-width="1"/><path d="M22 2A20 20 0 0 1 22 42A8.00 20 0 0 1 22 2Z" fill="#e4e6ea"/></svg><div><small>Dorastá</small><h3>Čistenie pleti a prístroje</h3></div></header>
+          <ul>
+            <li><span>Diamantová mikrodermabrázia</span><i>1 h</i><b class="n">39 €</b></li>
+            <li><span>Čistenie pleti ultrazvukovou špachtľou</span><i>30 min</i><b class="n">25 €</b></li>
+            <li><span>Chemický peeling</span><i>35 min</i><b class="n">35 €</b></li>
+            <li><span>Chemický peeling — iné oblasti</span><i>35 min</i><b class="n">37 €</b></li>
+            <li><span>LED terapia</span><i>35 min</i><b class="n">13 €</b></li>
+            <li><span>Elektroporácia (neinvazívna mezoterapia)</span><i>1 h</i><b class="n">42 €</b></li>
+          </ul>
+        </article>
+        <article class="sk" id="depilacia" style="margin-top:56px">
+          <header><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#151922" stroke="#151922" stroke-width="1"/><path d="M22 2A20 20 0 0 1 22 42A14.80 20 0 0 1 22 2Z" fill="#e4e6ea"/></svg><div><small>Pred splnom</small><h3>Depilácia</h3></div></header>
+          <ul>
+            <li><span>Depilácia hornej pery</span><i>7 min</i><b class="n">5 €</b></li>
+            <li><span>Depilácia — pera, brada</span><i>10 min</i><b class="n">8 €</b></li>
+            <li><span>Depilácia rúk</span><i>30 min</i><b class="n">20 €</b></li>
+            <li><span>Depilácia predkolenia</span><i>40 min</i><b class="n">25 €</b></li>
+            <li><span>Depilácia celých nôh</span><i>1 h 10 min</i><b class="n">35 €</b></li>
+          </ul>
+        </article>
+      </div>
+      <article class="sk spln" id="obocie-riasy">
+        <figure><img src="assets/lash-lifting-riasy.webp" width="700" height="700" alt="Detail oka po lash liftingu — natočené riasy a upravené obočie" loading="lazy"></figure>
+        <div>
+          <header><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#151922" stroke="#151922" stroke-width="1"/><circle cx="22" cy="22" r="20" fill="#e4e6ea"/></svg><div><small>Spln</small><h3>Obočie a riasy</h3></div></header>
+          <ul>
+            <li><span>Úprava obočia</span><i>6 min</i><b class="n">5 €</b></li>
+            <li><span>Úprava obočia veľká</span><i>10 min</i><b class="n">7 €</b></li>
+            <li><span>Farbenie obočia</span><i>20 min</i><b class="n">8 €</b></li>
+            <li><span>Úprava a farbenie obočia</span><i>20 min</i><b class="n">12 €</b></li>
+            <li><span>Laminácia obočia</span><i>50 min</i><b class="n">30 €</b></li>
+            <li><span>Laminácia obočia s farbením</span><i>55 min</i><b class="n">35 €</b></li>
+            <li><span>Farbenie rias</span><i>15 min</i><b class="n">8 €</b></li>
+            <li><span>Lash lifting (trvalá na riasy)</span><i>50 min</i><b class="n">30 €</b></li>
+            <li><span>Lash lifting + farbenie mihalníc</span><i>55 min</i><b class="n">35 €</b></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <p class="pozn">Ceny a trvanie podľa profilu na Notino, 4. 10. 2026 — overiť. Platba v hotovosti, kartou alebo darčekovým poukazom.</p>
+    <div class="akc">
+      <a class="cta cta-s" href="https://www.notino.sk/salony/ritual-pb/" rel="noopener" target="_blank">Rezervovať na Notino</a>
+      <a class="cta cta-o" href="https://ritual-pb.reservio.com/booking" rel="noopener" target="_blank">Rezervovať cez Reservio</a>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="prace" aria-labelledby="prace-h">
+  <div class="w prace">
+    <div>
+      <p class="k">Z ich práce</p>
+      <h2 id="prace-h" style="color:var(--svit);margin-top:14px">Detaily, ktoré vidno</h2>
+      <p>Úprava a dizajn obočia, aj s drobnými kamienkami — fotky z ich facebookovej stránky. Ďalšie práce zverejňujú na Instagrame a TikToku <span class="n">@ritual.pb</span>.</p>
+    </div>
+    <div class="kruhy">
+      <figure class="m"><div class="o"><img src="assets/obocie-s-kamienkami.webp" width="315" height="315" alt="Upravené obočie ozdobené drobnými farebnými kamienkami" loading="lazy"></div><figcaption>Obočie s kamienkami</figcaption></figure>
+      <figure class="m"><div class="o"><img src="assets/obocie-detail.webp" width="315" height="315" alt="Detail upraveného obočia s kamienkami" loading="lazy"></div><figcaption>Detail obočia</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sek stu" id="studio" aria-labelledby="stu-h">
+  <div class="w">
+    <figure><img src="assets/ritual-kamen.webp" width="480" height="480" alt="Logo RITUAL na svetlom kameni" loading="lazy"></figure>
+    <div>
+      <p class="k" id="stu-h">Štúdio v budove HANT</p>
+      <blockquote>„Miesto, kam sa budete radi vracať“</blockquote>
+      <p>Na Notino sa predstavujú takto: <q>Ritual PB v Považskej Bystrici ponúka priestor na oddych a starostlivosť, kde sa prepája estetika s celkovým pocitom pohody.</q></p>
+      <ul class="fakt">
+        <li><small>Kozmetika</small>Janssen Cosmetics</li>
+        <li><small>Parkovanie</small>zdarma v areáli budovy</li>
+        <li><small>Platba</small>hotovosť, karta, darčekové poukazy</li>
+        <li><small>Jazyky</small>slovenčina, čeština, angličtina</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="hod" aria-labelledby="hod-h">
+  <div class="w">
+    <div><p class="k" style="color:var(--piesok)">Hodnotenia</p><h2 id="hod-h">Takmer spln hviezd</h2></div>
+    <dl>
+      <div><dt class="n">5,0<sup>★</sup></dt><dd>Google · 16 hodnotení<br>1. 10. 2026</dd></div>
+      <div><dt class="n">4,9<sup>★</sup></dt><dd>Notino · 16 hodnotení<br>4. 10. 2026</dd></div>
+      <div><dt class="n">100<sup>%</sup></dt><dd>Facebook odporúča<br>5 recenzií</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="kon" id="kontakt" aria-labelledby="kon-h">
+  <div class="w">
+    <div>
+      <p class="k">Kontakt</p>
+      <h2 id="kon-h">Kde svieti RITUAL</h2>
+      <p class="adr">Hliny 1179/2, budova HANT<br>017 01 Považská Bystrica<small>Adresa podľa ich Facebooku; Notino uvádza Hliny 1412 — overiť.</small></p>
+      <div class="akc">
+        <a class="cta cta-s" href="tel:+421944772700">Zavolať</a>
+        <a class="cta cta-o" href="https://www.google.com/maps/search/RITUAL+PB+Hliny+budova+HANT+Pova%C5%BEsk%C3%A1+Bystrica" rel="noopener" target="_blank">Mapa a trasa</a>
+      </div>
+    </div>
+    <dl>
+      <dt>Telefón</dt><dd><a class="n" href="tel:+421944772700">+421 944 772 700</a></dd>
+      <dt>E-mail</dt><dd><a href="mailto:ritualpb.info@gmail.com">ritualpb.info@gmail.com</a></dd>
+      <dt>Hodiny</dt><dd>podľa rezervácie<small>stále otváracie hodiny neuvádzajú — overiť</small></dd>
+      <dt>Rezervácia</dt><dd><a href="https://www.notino.sk/salony/ritual-pb/" rel="noopener" target="_blank">Notino</a> · <a href="https://ritual-pb.reservio.com/booking" rel="noopener" target="_blank">Reservio</a></dd>
+      <dt>Sledujte</dt><dd><a href="https://www.instagram.com/ritual.pb" rel="noopener" target="_blank">Instagram</a> · <a href="https://www.tiktok.com/@ritual.pb" rel="noopener" target="_blank">TikTok</a> · <a href="https://www.facebook.com/share/18Le9FsiGg/" rel="noopener" target="_blank">Facebook</a></dd>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer><div class="w"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>Fotky: Facebook štúdia · cenník: Notino, 4.&nbsp;10.&nbsp;2026</span></div></footer>
+
+<nav class="lista" aria-label="Rýchle akcie">
+  <a href="tel:+421944772700">Zavolať</a>
+  <a href="https://www.notino.sk/salony/ritual-pb/" rel="noopener" target="_blank">Rezervovať</a>
+</nav>
+</html>
